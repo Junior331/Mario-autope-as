@@ -1,0 +1,498 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    @font-face {
+        font-family: h22;
+        src: url(../font/Andallan.otf);
+    }
+
+    @font-face{
+        font-family: babas;
+        src: url(../font/BebasNeue-Regular.ttf)
+    }
+    @font-face{
+        font-family: roboto;
+        src: url(../font/RobotoCondensed-Regular.ttf)
+    }
+    @font-face{
+        src: url(../font/RobotoCondensed-Bold.ttf);
+        font-family: robotob;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Song+Myung');
+
+    /* =========== HEADER ============= */
+
+
+
+    .cabecalho {
+
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 25px;
+        /* border-top: 7px solid #e0e0e0; */
+        position: fixed;
+        z-index: 100;
+        width: 100%;   
+        height: 110px;
+        transition: ease .2s; 
+        top: 0;
+        font-family: roboto;
+    }
+
+    .cabecalho img {
+        transition: linear .2s; 
+        width: 170px;
+        margin: 30px;
+
+    }
+    /* ============  NAV  ================== */
+
+
+    .nav-header {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .nav-header li {
+        padding: 0px 10px;
+        list-style: none;
+    }
+
+    .nav-a {
+        display: block;
+        text-decoration: none;
+        color: #2a7023;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .nav-a:hover {
+        text-decoration: none;
+        color: #2a6496;
+        transition: 0.2s;
+    }
+
+    .nav-header li:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        border-radius: 9px;
+    }
+
+
+    /* ============= MENU RESPONSIVO MOBILE ============== */
+
+    .navbar-collapse a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: roboto;
+        color: green;
+    }
+
+    .navbar-collapse li:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        border-radius: 9px;
+    }
+    .navbar-collapse li{
+        padding: 10px;
+    }
+    .navbar{
+
+        display: none;
+        background-color: #f1f1f1 !important;
+    }
+
+
+
+
+
+    /* =========== CARROSSEL ============= */
+
+    #carousel-sct{
+        margin-top: 110px;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        opacity: 0.8 !important;
+        
+    }
+    .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .imgcarousel{
+        width: 100%;
+        height: 391px;
+    }
+    .owl-dots{
+        display: none;
+    }
+    .fa-arrow-circle-right:before{
+        font-size: 40px;
+    }
+    .fa-arrow-circle-left:before{
+        font-size:40px;
+    }
+
+    .carousel-caption{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+    .textocarouselatendimento{
+        font-size: 3.5rem;
+        max-width: 365px;
+        font-family: roboto;
+        color:#f1f1f1;
+        text-shadow: 1px 2px #000;
+        
+        
+    }
+    .textocarouselfusca{
+        font-size: 57px;
+        max-width: 523px;
+        font-family: roboto;
+        color:#f1f1f1;
+        text-shadow: 1px 2px #000;
+    }
+
+
+
+
+    /* ========== CAROUSEL MOBILE ========= */
+    #carousel-sctmobile{
+        display: none;
+    }
+
+    /* ============= CARROSSEL MARCAS ================== */
+    .marcastext{
+        font-family: roboto;
+        font-size: 33px;
+        padding: 18px;
+        text-align: center;
+        background-color: #f3f3f3;
+        margin-bottom: 0;
+        color: black;
+        padding: 5x;
+
+    }
+    .owl-carousel.carousel-marcas{
+        background-color: #f3F3F3;
+    }
+    .owl-stage img{
+        margin-right: 0px !important;
+    }
+    .owl-carousel .owl-item img{
+        width: 18vh !important;
+        margin-top: 9px !important;
+        margin-bottom: 9px !important;
+    }
+
+    /* ============== DEPOIMENT ============== */
+
+    .depoimentotext{
+        text-align: center;
+        font-family: roboto;
+        margin-top: 15px;
+        font-size: 33px;
+        padding: 18px;
+    }
+    .depoimento {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 61px;
+    }
+    .p-3 {
+        padding: 1rem!important;
+        height: 222px;
+        width: 500px;
+    }
+
+    /* ============= ACESSO RAPIDO ============ */
+    .imgassrapido{
+        background: radial-gradient( #80ef69, #0d4c00);
+        border-radius: 119px;
+        width: 170px;
+        height: 170px;
+        border:1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .imgassrapido img{
+        width: 126px;
+        
+
+    }
+    .acssrapido{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 16px 128px 61px 128px;
+        text-align: center;
+        font-family: roboto;
+
+    }
+    .qmsomosrapido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+
+    }
+    .prorarido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .cttrapido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .botao{
+        padding: 9px;
+        background-color: transparent;
+        border: 1px solid green;
+        border-radius: 7px;
+        color: black;
+        font-size: 20px;
+        font-family: roboto;
+    }
+    .botao:hover{
+        background-color: #2ebb3e;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .acssrapido p{
+        font-size: 17px;
+        width: 180px;
+    }
+
+
+    .acssrapido a{
+        text-decoration: none;
+        color: #000;
+    }
+
+
+    /* ======= footer ======== */
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #f1f1f1
+    }    
+
+    .acssrapidof{
+        flex-direction: column;
+    }
+    .footer p{
+        font-family: sans-serif;
+        
+    }
+    .footer h3{
+        font-family: sans-serif;
+        padding: 2px 0px 4px 0px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: roboto;
+        font-style: initial;
+    }
+
+    .contato {
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .pagametos img{
+        padding-right: 4px;
+    }
+    .cartaos{
+        display: flex;
+        align-items: center;
+    }
+    .acssrapidof a{
+        text-decoration: none;
+        color: #007bff;
+        font-size: 18px;
+        font-weight: 100;
+        opacity: 0.8;
+    }
+    .acssrapidof a:hover{
+        color: #000;
+        transition: 1s;
+    }
+    .redesociais img:hover{
+       opacity: 0.9;
+       transition: 5ms;
+    }
+    .footer hr{
+        height: 1px;
+        background-color: #305C11;
+        margin: 0px 0px 15px 0px;
+        width: 70px;
+    }                              
+
+    .footerdevs {
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgpag{
+        width: 60px;
+    }
+
+    .footerdevs p{
+        color: #f1f1f1;
+        margin-right: 10px;
+    }
+    .footerdevs img{
+        width: 100px;
+    }
+
+    .devsfooter{
+    -webkit-filter:grayscale(100%);
+    }
+    .devsfooter:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 0.2s;
+    }
+  
+
+    @media(max-width: 880px) {
+        .carousel-caption p {
+            font-size: 2.6rem;
+            max-width: 345px;
+        }
+        .cabecalho img{
+            max-width: 150px;
+        }
+    }
+ 
+
+    @media(max-width:700px) {
+        .imgcarousel {
+            width: 100% !important;
+            height: 512px;
+        }
+        .depoimento{
+            flex-direction: column;
+        }
+        .p-3{
+            width: 100%;
+        }
+
+        .carousel-indicators{
+            display: none;
+        }
+        .owl-carousel .owl-item img{
+            width: 67px !important;
+            margin-right: 10px !important; 
+            padding-bottom: 3px;
+
+        }
+        .acssrapido{
+            display: none;
+        }
+    
+        .logo{
+            width: 160px;
+            margin-left: 0px;
+            align-items: center;
+
+        }
+        .navbar-collapse{
+            background-color: #f1f1f1;
+
+        } 
+        .navbar{
+            display: flex;
+        }
+        .navbar-collapse a{
+            font-size: 20px;
+            padding: 14px;
+        }
+        .navbar-collapse li{
+            margin: 0px;
+        } 
+        .cabecalho{
+            display: none;
+        }
+        #carousel-sct{
+        }
+        .marcastext,.depoimentotext{
+            font-size: 25px;
+        }
+
+        #carousel-sctmobile{
+            display: inline-block;
+            margin-top: 101px;
+            width: 100%;
+        }
+
+        #carousel-sct{
+            display:none;
+        }
+        .carouselExampleIndicators{
+            margin-top:109px !important;
+        }
+        .textocarouselfusca{
+            font-size: 20px;
+        }
+        .carousel-caption p{
+            display: flex;
+            padding-top: 70px;
+
+        }
+        .footer{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .footer hr{
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+
+        }
+        .footer div{
+            padding: 20px;
+        }
+
+
+
+    }
+

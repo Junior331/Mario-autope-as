@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <mposition absoluteeta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./img/favicon1.ico" />
+  <meta name="theme-color" content="#75b529">
+
+  <title>Mario´s Auto Peças</title>
+  <link rel="stylesheet" href="./css/contatos.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+ 
+  <link rel="stylesheet" href="./css/normalize.css">
+
+</head>
+
+<body>
+  
+    
+    
+  <!-- ================= HEADER =================== -->
+
+  <header class="cabecalho">
+
+    <a href="index.html">
+      <img  src="img/logoo-min.png" alt="Mario´s Auto Peças">
+    </a>
+    <nav class="nav-header">
+      <li>
+        <a href="index.html" class="nav-a">Home</a>
+      </li>
+      <li>
+        <a href="qmsomos.html" class="nav-a">Quem Somos</a>
+      </li>
+      <li>
+        <a href="produtos.html" class="nav-a">Produtos</a>
+      </li>
+      <li>
+        <a href="contato.html" class="nav-a">Contato</a>
+      </li>
+    </nav>
+  </header>
+
+  <!-- =============== MENU RESPINSIVO MOBILE ============= -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+
+      <a class="logo-fonte" href="index.html">
+          <img class="logo" src="./img/logoo-min.png" width="200px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul align="center" class="navbar-nav ml-auto">
+                  <a class="navlink2" href="index.html">
+                      <li class="nav-item">Home
+                      </li>
+                  </a>
+                  <a class="navlink2" href="produtos.html">
+                      <li class="nav-item">Quem Somos
+                      </li>
+                  </a>
+                  <a class="navlink2" href="qmsomos.html">
+                      <li class="nav-item">Prudutos
+                      </li>
+                  </a> 
+                  <a class="navlink" href="contato.html">
+                      <span class="sr-only">(current)</span>
+                      <li class="nav-item active">Contato
+                      </li>
+                  </a>
+          </ul>
+
+      </div>
+  </nav>
+
+    <!-- ==================== Contatos =================== -->
+
+
+  <section class="locaisicon">
+  <div class="nossahistoria only-desktop">
+    <div class="nossa history"><h1 class="textlocalizacao">LOCALIZAÇÃO</h1></div>
+</div> 
+      <div class="orçamento">
+          
+          <img src="./img/ORÇAMENTO-min.png" alt="ORÇAMENTO_-_ICONE-min.png" height="70px" width="70px">
+      
+      <p class="orcamento"> ORÇAMENTO </p>
+  </div>
+  </section>    
+  <section class="sec-contato">
+
+      <div id="map"></div>
+
+      <form class="formulario" action="crud.php" method="POST">            
+          <!-- <label for="nome">Nome:</label> -->
+          <input type="text" name="nomes" id="nome" placeholder="Digite Seu Nome">
+
+          <!-- <label for="tel">Telefone:</label> -->
+          <input type="text" name="telefone" id="tel" placeholder="Digite Seu Telefone">
+         
+          <select form="carform"  id="marca" name="marca">
+              <option  value="">Selecione Uma Marca</option>
+          </select>
+          <select id="modelo" name="modelo">
+                  <option value="">Modelo</option>
+          </select>
+          <select id="ano" name="ano"> 
+              <option value="">Ano</option>                
+          </select>
+
+          <textarea name="mensagem" id="comentario" rows="10" placeholder="Digite Seu Comentario"></textarea>
+          <div class="botaoo">
+          <button type="button" class="btao" onClick="envioFormulario()"> Enviar </button>
+          </div>
+          <div class="dlocis">
+              <p class="locais">LOCALIZAÇÃO</p>
+          </div>  
+      </form>
+
+  </section>
+  <!-- ==================== TELEFONES =================== -->
+
+  <section class="telefone">
+      <div class="tel">
+       <img src="img/TELEFONE_-_ICONE-min.png" alt="TELEFONE_-_ICONE-min.png" width="50px" height="50px">
+       <p class="info">2417-2379<br>2417-3234</p>
+      </div>
+      <div class="whatsapp">
+       <img src="img/WHATSAPP_-_ICONE-min.png" alt="WHATSAPP_-_ICONE-min.png" width="50px" height="50px">
+       <p class="info">96428-1299 <br> 96488-6250 <br> 96488-2465</p>
+      </div>
+      <div class="localizaçao">
+       <img src="img/localizacao.png" alt="LOCALIZAÇÃO_-_ICONE-min.png" width="65px" height="65px">
+       <p class="info">Estrada da Pedra, 7364 <br> Pedra de Guaratiba, RJ</p>
+      </div>
+  </section>
+
+
+  <!-- ==================== FOOTER =================== -->
+
+  <div class="footer">
+        
+    <div class="redesociais">
+        <h3 class="">Rede Social</h3>
+        <hr>
+        <a target="_blank" href="https://www.facebook.com/mariosautopecas/">
+        <img src="./img/facebookicon-min.png" alt="" width="50px">
+      </a>
+    </div>
+    <div class="acssrapidof">
+        <h3 class="">Acesso Rapido</h3>
+        <hr>
+        <p> <a href="./index.html">Home</a> </p>
+        <p> <a href="./qmsomos.html">Quem Somos</a> </p>
+        <p> <a href="./produtos.html">Produtos</a> </p>
+        <p> <a href="./contato.html">Contatos</a> </p>
+    </div>
+    <div class="contato">
+        
+      <h3 class="">Contatos</h3>
+      <hr>
+      <div class="contatos">
+      <p>
+        <i><img src="./img/home.png" alt="" width="18px"> </i> &nbsp Estr. da Pedra, 7364 - Guaratiba,<br> Rio de Janeiro - RJ, 23030-380</p>
+      <p>
+        <i><img src="./img/icons8-gmail.svg" alt="" width="20px"><i class=""></i> &nbspmarioautopeças@gmail.com</p>
+      <p>
+        <img src="./img/phone.png" alt="" width="20px"> <i class="" width="30px"></i> &nbsp(21) 2417-2379</p>
+      <p>
+            <img src="./img/phone.png" alt="" width="20px"> <i class=""> </i> &nbsp(21) 2417-3234</p>
+
+      <p>
+        <i><img src="./img/logotipo-whatsapp_318-49685-min.png" alt="" width="20px"></i> &nbsp(21) 96428-1299</p>
+      <p>
+        <i><img src="./img/logotipo-whatsapp_318-49685-min.png" alt="" width="20px"></i> &nbsp(21) 96488-6250</p>
+      <p>
+        <i><img src="./img/logotipo-whatsapp_318-49685-min.png" alt="" width="20px"></i> &nbsp(21) 96488-2465</p>
+    </div>
+    </div>
+    <div class="pagametos">
+            <h3 class="">Pagamentos</h3>
+            <hr>
+            <div class="cartaos">
+        <img src="./img/Elo_logo-min.png" alt="" width="48px" height="44px">
+        <img src="./img/mastercard-min.png" alt="" width="60px" height="39px">
+        <img src="./img/visa-min.png" alt="" width="60px" height="39px"> 
+        <img src="./img/American-Express-PNG-Clipart-min.png" alt="" width="60px" height="52px">
+        <img src="./img/rede-logo-1-min.png" alt="" width="60px" height="21px">
+    </div>
+    </div>
+</div>
+  <div class="footerdevs">
+    <p>By: </p>
+    <a href="http://www.estartandodevs.com.br/">
+      <img class="devsfooter" src="./img/fonte branca-min.png"  alt="">
+  </div>
+
+
+
+  <!-- ============ JS, Boststrao & jquery ========= -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+  <script src="./js/owl.carousel.min.js"></script>
+   <script src="./js/app.js"></script>
+   <script src="./js/ScriptNav.js"></script>
+
+   <!-- ============== MENU SCROLL =============== -->
+
+
+
+            <!-- EVIAR MSG WHATSAPP -->
+
+            <script>
+                
+                function envioFormulario() {
+                    var meuNumero = "5521964882465";
+                    if($(window).width() <= 700) {
+                        window.location = "https://api.whatsapp.com/send?phone=" + meuNumero + "&text=Olá,%20me%20chamo%20"+$("#nome").val()+"%A0"+$("#comentario").val()+"marca%20" + $("#marca option:selected").text() + "%0AModelo%20" + $("#modelo option:selected").text() + "%0AAno%20" + $("#ano option:selected").text();
+                    } else {
+                        var nome = $('#nome').val();
+                        var telefone = $('#tel').val();
+                        var marca = $('#marca').val();
+                        var modelo = $('#modelo').val();
+                        var ano = $('#ano').val();
+                        var mensagem = $('#comentario').val();
+                        $.ajax({
+                            type: "POST",
+                            data: {
+                                "nome":nome,
+                                "telefone": telefone,
+                                "marca":marca,
+                                "modelo":modelo,
+                                "ano": ano,
+                                "mensagem":mensagem
+                            },
+                            url: "./sendemail/enviaremail.php",
+                            success: function (response) {
+                                console.log(response);
+                                location.reload();
+                            },
+                            error: function (e) {
+                                console.log("Erro: " + e);
+                            }
+                        });
+                    }
+                }
+
+                $.get("http://fipeapi.appspot.com/api/1/carros/marcas.json", function(marcas, status) {
+                    // console.log(marcas[0]);
+                    
+                    var tamanho = marcas.length;
+        
+                    for (var i = 0; i < tamanho; i++) {
+                        document.getElementById("marca").innerHTML += "<option value='" + marcas[i].id + "'>" + marcas[i].name + "</option>";
+                    }
+                });
+                $("#marca").change(function() {
+                    var htmlModelo = "<option value=''>Selecione o modelo</option>";
+                    $.get("http://fipeapi.appspot.com/api/1/carros/veiculos/" + $("#marca").val() + ".json", function(modelos, status) {
+                        var tamanho = modelos.length;
+                        for (var i = 0; i < tamanho; i++) {
+                            htmlModelo += "<option value='" + modelos[i].id + "'>" + modelos[i].name + "</option>";
+                        }
+                        document.getElementById("modelo").innerHTML = htmlModelo;
+                    });
+                });
+                $("#modelo").change(function() {
+                    var htmlAno = "<option value=''>Selecione o ano</option>";
+                    $.get("http://fipeapi.appspot.com/api/1/carros/veiculo/" + $("#marca").val() + "/" + $("#modelo").val() + ".json", function(anos, status) {
+                        var tamanho = anos.length;
+                        for (var i = 0; i < tamanho; i++) {
+                            htmlAno += "<option value='" + anos[i].id + "'>" + anos[i].name + "</option>";
+                        }
+                        document.getElementById("ano").innerHTML = htmlAno;
+                    });
+                });
+            </script>
+    
+
+            <!-- ======= Mapa ======= -->
+            <script>
+                function initMap() {
+                    var uluru = {
+                        lat: -22.9871293,
+                        lng: -43.6514069
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 13,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGgHmDeD5_Q7Mh5sUPgaQKOtPE6vElSWA&callback=initMap">
+            </script>
+
+
+</body>
+
+
+
+</html>

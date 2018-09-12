@@ -1,0 +1,239 @@
+
+/* =========== LOCAIS ============== */
+p.locais{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    /* margin: 5px; */
+    margin-top: 20px;
+    padding: 33px;
+    background-color: green;
+    width: 320px;
+    color: white;
+    height: 60px;
+}
+.navlink2{
+    text-decoration: none !important;
+}
+.dlocais{
+    display:flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.locaisicon{
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-between;
+
+}
+/* =========== ORÇAMENTO ============== */
+select{
+    border: solid #000 2px;
+}
+.orçamento{
+    display: flex;
+    align-items: flex-end;
+    width: 30%; 
+
+}
+.orcamento{
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: roboto;
+    
+}
+
+/* =========== ICONES ============== */
+.telefone{
+    display: none;
+    /* display: flex; */
+    align-items: center; 
+    justify-content: space-around;
+
+
+}
+.tel{
+    display: flex;
+
+    align-items: center;
+    
+    
+}
+ .whatsapp{
+    display: flex;
+    align-items: center;
+    
+}
+.localizaçao{
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+}
+
+   
+
+
+/* =========== CONTATOS ============== */
+.sec-contato{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+
+}
+
+#map{    
+    width: 60%;
+    height: 800px;  
+    margin: 30px;  
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 40%;
+}
+input, textarea, select{
+    width: 100%;
+
+}
+
+#nome, #modelo , #ano,#tel, #comentario, #marca{
+        background-color: rgba(136, 0, 0, 0);
+        color: rgba(25,135,25,1);
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        border: 1px solid #80808087;
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #80808085;
+    }
+   
+
+label{
+    color: rgb(0, 0, 0);
+}
+ 
+placeholder{
+    color:rgba(25,135,25,1);
+}
+::-webkit-input-placeholder {
+    color:rgba(25,135,25,1);
+}
+
+.btao{
+ background-color:white;
+ padding: 5px; 
+ color: rgba(25,135,25,1);
+ box-shadow: 3px 3px 3px #80808085;
+ border: 1px solid;
+ width: 95px;
+ height: 44px;
+}
+
+
+.btao:hover{
+    border-style: none;
+    background-color:green ;
+    color: white;
+    transition: 0.2s;
+}
+.dlocis{
+    display: none;
+}
+
+.nossahistoria {
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.nossa {
+    box-shadow: 5px 5px 5px rgb(155, 155, 155);
+    background-color: rgb(25, 135, 25);
+    width: 268PX;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.history {
+    background-color: rgb(25, 135, 25);
+}
+.textlocalizacao {
+    font-size: 25px;
+    font-family: roboto;
+    color: white;
+}
+
+@media(max-width:700px){
+    .sec-contato{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .formulario, #map{
+        width: 100%;
+    }
+
+    .btao, .botaoo{
+        width: 100%;
+    }
+
+    #map{
+        margin: 0px;
+        padding: 20px;
+        height: 450px;
+    }
+
+    .orçamento img{
+        display: flex;
+        width: 70px;
+        height: 70px; 
+    }
+    .nossahistoria{
+        margin-bottom: 30px;
+        display: none;
+    }
+
+    .telefone{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .tel, .whatsapp, .localizaçao{
+        padding: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .orçamento{
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    p.locais{
+        display: flex;
+        font-size: 20px;
+        height: 65px;
+        padding:5px;
+        margin-bottom: -7px;
+        justify-content: center;
+    }
+    
+    #nome,#tel,#marca,#modelo,#ano{
+        padding: 15px
+    }
+}

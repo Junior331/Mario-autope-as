@@ -1,0 +1,79 @@
+
+
+#produtos{
+    padding: 15px;
+}
+
+.nossahistoria {
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 110px;
+    
+}
+.bloco-produtos {
+    border: 1px solid grey;
+    max-width: 370px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #80808085;;
+}
+.nossa {
+    box-shadow: 5px 5px 5px rgb(155, 155, 155);
+    background-color: rgb(25, 135, 25);
+    width: 17%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.history {
+    background-color: rgb(25, 135, 25);
+}
+.nossa h1 {
+    font-size: 25px;
+    font-family: roboto;
+    color: white;
+}
+
+#produtos img{
+    max-width: 249px;
+    height: 180px;
+    margin-bottom: 5px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+#produtos h3{
+    background-color:  hsl(0, 0%, 65%);;
+    font-family: roboto;
+    margin-bottom: 0;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+}
+
+#produtos p {
+    display: none;
+    background:rgb(0, 0, 0);
+    margin-bottom: 0;
+    text-align: center;
+    color: #ffff;
+
+}
+.bloco-produtos:hover h3{
+    transition: linear .3s;
+     background-color: rgb(25,135,25) !important;
+     color: white;
+}
+
+@media(max-width:700px){
+    .nossa{
+        width: 42%;
+    }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./img/favicon1.ico" />
+
+  <title>Mario´s Auto Peças</title>
+  <meta name="theme-color" content="#75b529">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/produtos.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+</head>
+
+<body>
+  
+    
+    
+  <!-- ================= HEADER =================== -->
+
+  <header class="cabecalho">
+
+    <a href="index.html">
+      <img  src="img/logoo-min.png" alt="Mario´s Auto Peças">
+    </a>
+    <nav class="nav-header">
+      <li>
+        <a href="index.html" class="nav-a">Home</a>
+      </li>
+      <li>
+        <a href="qmsomos.html" class="nav-a">Quem Somos</a>
+      </li>
+      <li>
+        <a href="produtos.html" class="nav-a">Produtos</a>
+      </li>
+      <li>
+        <a href="contato.html" class="nav-a">Contato</a>
+      </li>
+    </nav>
+  </header>
+
+  <!-- =============== MENU RESPINSIVO MOBILE ============= -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+
+      <a class="logo-fonte" href="index.html">
+          <img class="logo" src="./img/logoo-min.png" width="200px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul align="center" class="navbar-nav ml-auto">
+                  <a class="navlink2" href="index.html">
+                      <li class="nav-item">Home
+                      </li>
+                  </a>
+                  <a class="navlink2" href="qmsomos.html">
+                      <li class="nav-item">Quem Somos
+                      </li>
+                  </a>
+                  <a class="navlink2" href="produtos.html">
+                      <li class="nav-item">Prudutos
+                      </li>
+                  </a> 
+                  <a class="navlink" href="contato.html">
+                      <span class="sr-only">(current)</span>
+                      <li class="nav-item active">Contato
+                      </li>
+                  </a>
+          </ul>
+
+      </div>
+  </nav>
+  <!-- ================== PRODUTOS =================== -->
+  <div class="nossahistoria only-desktop">
+    <div class="nossa history"><h1>PRODUTOS</h1></div>
+</div>
+
+  <div class="margem2"></div>
+
+  <section id="produtos">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="bloco-produtos"  data-toggle="modal" data-target="#oleo-modal">
+                      <img src="./img/lubrax-min.png" alt="">
+                      <h3>Óleos</h3>
+                      
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="bloco-produtos" data-toggle="modal" data-target="#Amortecedor-modal">
+                      <img src="./img/large-min.png" alt="">
+                      <h3>Amortecedor</h3>
+
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="bloco-produtos"  data-toggle="modal" data-target="#motor-modal">
+                      <img src="./img/motor.PNG6-min.png" alt="">
+                      <h3>Motor</h3>
+
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="bloco-produtos" data-toggle="modal" data-target="#freios-modal">
+                      <img src="./img/freios 3-min.jpg" alt="">
+                      <h3>Freios</h3>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="bloco-produtos" data-toggle="modal" data-target="#cabos-modal">
+                      <img src="./img/cabo-de-vela-min.png" alt="">
+                      <h3>Cabos</h3>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="bloco-produtos" data-toggle="modal" data-target="#suspensao-modal">
+                      <img src="./img/suspençao-min.png" alt="">
+                      <h3>Suspensão</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <div class="margem2"></div>
+  <!-- Modal -->
+
+<div id="template-texto">
+    <p></p>
+  </div>
+  
+  <!-- Modal -->
+  
+  <div class="modal fade" id="oleo-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Oleo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            têm quatro funções básicas que te provam porque ele é essencial para garantir o bom funcionamento do seu carro. Fundamentalmente, o óleo tem como função primária lubrificar as partes do motor, diminuindo o atrito e evitando problemas como o desgaste excessivo das partes
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Amortecedor-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Amortecedor</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                têm como função, controlar as oscilações da suspensão, mantendo as rodas do veículo em contato permanente com o solo estabilizando a carroceria do veiculo, propiciando conforto, segurança, estabilidade e evitando o desgaste excessivo dos componentes da suspensão e pneus
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="motor-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Motor</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Um motor é um dispositivo que converte outras formas de energia em energia mecânica, de forma a impelir movimento a uma máquina ou veículo. Em contraste, existem os chamados geradores                 </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="freios-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Freios</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Os freios de um automóvel não possuem a função de parar o mesmo, na verdade, a função dos freios é reduzir a velocidade da roda até a imobilização daquele.
+                            
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="cabos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Cabos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Os Cabos de Velas tem um papel fundamental no
+                        sistema de ignição, no qual a qualidade da combustão a ser realizada depende diretamente destes condutores.
+                              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="suspensao-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Suspensão</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          A suspensão é o sistema responsável pela estabilidade do veículo. Seu objetivo é absorver, por meio dos seus componentes, todas as irregularidades do solo. Também é o encarregado de manter as quatro rodas no chão e auxiliar no desempenho do automóvel.
+                                
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+  
+
+
+  
+ 
+  <!-- ==================== FOOTER =================== -->
+
+  <div class="footer">
+        
+    <div class="redesociais">
+        <h3 class="">Rede Social</h3>
+        <hr>
+        <a target="_blank" href="https://www.facebook.com/mariosautopecas/">
+        <img src="./img/facebookicon-min.png" alt="" width="50px">
+      </a>
+    </div>
+    <div class="acssrapidof">
+        <h3 class="">Acesso Rapido</h3>
+        <hr>
+        <p> <a href="./index.html">Home</a> </p>
+        <p> <a href="./qmsomos.html">Quem Somos</a> </p>
+        <p> <a href="./produtos.html">Produtos</a> </p>
+        <p> <a href="./contato.html">Contatos</a> </p>
+    </div>
+    <div class="contato">
+        
+      <h3 class="">Contatos</h3>
+      <hr>
+      <div class="contatos">
+      <p>
+        <i><img src="./img/home.png" alt="" width="18px"> </i> &nbsp Estr. da Pedra, 7364 - Guaratiba,<br> Rio de Janeiro - RJ, 23030-380</p>
+      <p>
+        <i><img src="./img/icons8-gmail.svg" alt="" width="20px"><i class=""></i> &nbspmarioautopeças@gmail.com</p>
+      <p>
+        <img src="./img/phone.png" alt="" width="20px"> <i class="" width="30px"></i> &nbsp(21) 2417-2379</p>
+      <p>
+            <img src="./img/phone.png" alt="" width="20px"> <i class=""> </i> &nbsp(21) 2417-3234</p>
+
+      <p>
+        <i><img src="./img/logotipo-whatsapp_318-49685-min.png" alt="" width="20px"></i> &nbsp(21) 96428-1299</p>
+      <p>
+        <i><img src="./img/logotipo-whatsapp_318-49685-min.png" alt="" width="20px"></i> &nbsp(21) 96488-6250</p>
+      <p>
+        <i><img src="./img/logotipo-whatsapp_318-49685-min.png" alt="" width="20px"></i> &nbsp(21) 96488-2465</p>
+    </div>
+    </div>
+    <div class="pagametos">
+            <h3 class="">Pagamentos</h3>
+            <hr>
+            <div class="cartaos">
+        <img src="./img/Elo_logo-min.png" alt="" width="48px" height="44px">
+        <img src="./img/mastercard-min.png" alt="" width="60px" height="39px">
+        <img src="./img/visa-min.png" alt="" width="60px" height="39px"> 
+        <img src="./img/American-Express-PNG-Clipart-min.png" alt="" width="60px" height="52px">
+        <img src="./img/rede-logo-1-min.png" alt="" width="60px" height="21px">
+    </div>
+    </div>
+</div>
+    <div class="footerdevs">
+      <p>By: </p>
+      <a href="http://www.estartandodevs.com.br/">
+        <img class="devsfooter" src="./img/fonte branca-min.png"  alt="">
+    </div>
+  <!-- Footer -->
+
+
+  <!-- ============ JS, Boststrao & jquery ========= -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+<script src="./js/app2.js"></script>
+<script src="./js/ScriptNav.js"></script>
+
+   <!-- ============== MENU SCROLL =============== -->
+
+</body>
+
+
+
+</html>
